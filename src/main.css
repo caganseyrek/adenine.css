@@ -1,0 +1,29 @@
+/*! adenine.css | MIT License | https://github.com/caganseyrek/adenine.css */
+
+/* Main color palettes */
+@import url("./colors/dark-theme.colors.css");
+@import url("./colors/light-theme.colors.css");
+
+/* Main variables for customization */
+@import url("./settings/dark-theme.settings.css");
+@import url("./settings/light-theme.settings.css");
+@import url("./settings/spacing.settings.css");
+@import url("./settings/typography.settings.css");
+
+/* Core files */
+@import url("./core/globals.core.css");
+@import url("./core/helpers.core.css");
+@import url("./core/utilities.core.css");
+
+/* Partial modules for base elements */
+@import url("./modules/button.module.css");
+@import url("./modules/container.module.css");
+@import url("./modules/form.module.css");
+@import url("./modules/layout.module.css");
+@import url("./modules/table.module.css");
+@import url("./modules/typography.module.css");
+
+/* External libraries */
+@import url("./lib/normalize.css");
+
+/* Custom components for advanced elements */

@@ -1,0 +1,14 @@
+:root {
+  --border-radius-sm: 2px;
+  --border-radius: 5px;
+  --border-radius-lg: 8px;
+
+  --spacing-vertical: 8px;
+  --spacing-horizontal: 12px;
+
+  --padding-vertical: 8px;
+  --padding-horizontal: 12px;
+
+  --margin-vertical: 8px;
+  --margin-horizontal: 0;
+}

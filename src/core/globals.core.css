@@ -1,0 +1,20 @@
+:root {
+  --static-color-black: #2b2b2b;
+  --static-color-white: #f8f8f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}

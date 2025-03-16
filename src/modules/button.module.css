@@ -1,0 +1,71 @@
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  height: 2.5rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  column-gap: calc(var(--padding-vertical) / 2);
+  padding: var(--padding-vertical) var(--padding-horizontal);
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--color-button-base-border);
+  background-color: var(--color-button-base-background);
+  color: var(--color-button-base-text);
+}
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline-offset: 0;
+  outline: solid 3.5px var(--color-button-base-outline) !important;
+  border: solid 1px var(--color-button-base-outline-inner-border);
+  border-radius: var(--border-radius);
+}
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+  border: solid 1px var(--color-button-base-faded-border);
+  background-color: var(--color-button-base-faded-background);
+  color: var(--color-button-base-faded-text);
+  cursor: not-allowed;
+}
+
+button.primary,
+input[type="button"].primary,
+input[type="reset"].primary,
+input[type="submit"].primary {
+  border: solid 1px var(--color-button-primary-border);
+  background-color: var(--color-button-primary-background);
+  color: var(--color-button-primary-text);
+}
+button.primary:focus,
+input[type="button"].primary:focus,
+input[type="reset"].primary:focus,
+input[type="submit"].primary:focus {
+  outline-offset: 0;
+  outline: solid 3.5px var(--color-button-primary-outline) !important;
+  border: solid 1px var(--color-button-primary-outline-inner-border) !important;
+  border-radius: var(--border-radius);
+}
+button.primary:disabled,
+input[type="button"].primary:disabled,
+input[type="reset"].primary:disabled,
+input[type="submit"].primary:disabled {
+  border: solid 1px var(--color-button-primary-faded-border);
+  background-color: var(--color-button-primary-faded-background);
+  color: var(--color-button-primary-faded-text);
+  cursor: not-allowed;
+}
+
+button.icon,
+input[type="button"].icon,
+input[type="reset"].icon,
+input[type="submit"].icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}

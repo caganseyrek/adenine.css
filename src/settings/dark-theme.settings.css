@@ -1,0 +1,129 @@
+@import url("../colors/dark-theme.colors.css");
+
+:root body.dark {
+  color-scheme: dark;
+
+  --color-text: #f8f8f8;
+  --color-background: #1c1c1c;
+
+  --color-primary-1: var(--color-indigo-1);
+  --color-primary-2: var(--color-indigo-2);
+  --color-primary-3: var(--color-indigo-3);
+  --color-primary-4: var(--color-indigo-4);
+  --color-primary-5: var(--color-indigo-5);
+  --color-primary-6: var(--color-indigo-6);
+  --color-primary-7: var(--color-indigo-7);
+  --color-primary-8: var(--color-indigo-8);
+  --color-primary-9: var(--color-indigo-9);
+
+  /* Button */
+  --color-button-base-background: var(--color-gray-8);
+  --color-button-base-text: var(--color-gray-1);
+  --color-button-base-border: var(--color-gray-7);
+  --color-button-base-outline: var(--color-gray-8);
+  --color-button-base-outline-inner-border: var(--color-gray-6);
+
+  --color-button-base-faded-background: var(--color-gray-9);
+  --color-button-base-faded-text: var(--color-gray-4);
+  --color-button-base-faded-border: var(--color-gray-8);
+
+  --color-button-primary-background: var(--color-primary-7);
+  --color-button-primary-text: var(--color-primary-1);
+  --color-button-primary-border: var(--color-primary-6);
+  --color-button-primary-outline: var(--color-primary-7);
+  --color-button-primary-outline-inner-border: var(--color-primary-5);
+
+  --color-button-primary-faded-background: var(--color-primary-8);
+  --color-button-primary-faded-text: var(--color-primary-2);
+  --color-button-primary-faded-border: var(--color-primary-7);
+
+  /* Button and Container */
+  --color-container-base-background: var(--color-gray-9);
+  --color-container-base-text: var(--color-gray-1);
+  --color-container-base-border: var(--color-gray-8);
+
+  --color-container-success-background: var(--color-green-9);
+  --color-container-success-text: var(--color-green-1);
+  --color-container-success-border: var(--color-green-8);
+
+  --color-container-danger-background: var(--color-red-9);
+  --color-container-danger-text: var(--color-red-1);
+  --color-container-danger-border: var(--color-red-8);
+
+  --color-container-warning-background: var(--color-yellow-8);
+  --color-container-warning-text: var(--color-yellow-1);
+  --color-container-warning-border: var(--color-yellow-7);
+
+  --color-container-info-background: var(--color-blue-8);
+  --color-container-info-text: var(--color-blue-1);
+  --color-container-info-border: var(--color-blue-7);
+
+  /* Form */
+  --color-input-group-label-background: var(--color-gray-8);
+  --color-input-group-label-text: var(--color-gray-1);
+  --color-input-group-label-border: var(--color-gray-7);
+
+  --color-input-background: var(--color-gray-9);
+  --color-input-border: var(--color-gray-8);
+  --color-input-text: var(--color-gray-1);
+  --color-input-outline: var(--color-gray-8);
+  --color-input-outline-inner-border: var(--color-gray-6);
+  --color-input-placeholder-text: var(--color-gray-5);
+
+  --color-input-success-background: var(--color-gray-9);
+  --color-input-success-border: var(--color-green-7);
+  --color-input-success-text: var(--color-green-1);
+  --color-input-success-outline: var(--color-green-9);
+  --color-input-success-outline-inner-border: var(--color-green-7);
+  --color-input-success-placeholder-text: var(--color-green-1);
+
+  --color-input-danger-background: var(--color-gray-9);
+  --color-input-danger-border: var(--color-red-6);
+  --color-input-danger-text: var(--color-red-1);
+  --color-input-danger-outline: var(--color-red-9);
+  --color-input-danger-outline-inner-border: var(--color-red-6);
+  --color-input-danger-placeholder-text: var(--color-red-1);
+
+  --color-form-success-message-text: var(--color-green-4);
+  --color-form-danger-message-text: var(--color-red-4);
+
+  --color-checkbox-unchecked-border: var(--color-gray-8);
+  --color-checkbox-unchecked-background: var(--color-gray-9);
+
+  --color-checkbox-checked-border: var(--color-primary-4);
+  --color-checkbox-checked-background: var(--color-primary-4);
+
+  --color-checkbox-outline: var(--color-primary-7);
+  --color-checkbox-outline-inner-border: var(--color-primary-4);
+  --color-checkbox-checkmark-background: var(--color-primary-4);
+
+  --color-fieldset-border: var(--table-border);
+
+  /* Table */
+  --table-border: var(--color-gray-8);
+  --table-striped-background: var(--color-gray-9);
+  --table-th-background: var(--color-gray-9);
+  --table-td-text: var(--color-gray-2);
+
+  /* Typography */
+  --color-paragraph-text: var(--color-gray-2);
+  --color-list-marker: var(--color-gray-2);
+
+  --color-link-text: var(--color-primary-3);
+  --color-link-outline: var(--color-primary-3);
+
+  --color-higlight-text: var(--color-primary-1);
+  --color-higlight-background: var(--color-primary-6);
+
+  --color-blockquote-border: var(--color-gray-8);
+  --color-blockquote-background: var(--color-gray-9);
+  --color-blockquote-text: var(--color-gray-2);
+  --color-blockquote-citation: var(--color-gray-4);
+
+  --color-inline-code-text: var(--color-gray-2);
+  --color-inline-code-background: var(--color-gray-8);
+
+  --color-codeblock-border: var(--color-gray-8);
+  --color-codeblock-background: var(--color-gray-9);
+  --color-codeblock-text: var(--color-gray-2);
+}

@@ -1,0 +1,55 @@
+table {
+  width: 100%;
+  border: solid 1px var(--table-border);
+  border-radius: var(--border-radius);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table.striped tbody tr:nth-child(even) {
+  background-color: var(--table-striped-background);
+}
+table thead tr th,
+table tfoot tr th {
+  text-align: left;
+  background-color: var(--table-th-background);
+}
+table thead tr th {
+  padding: var(--padding-vertical) var(--padding-horizontal);
+  box-sizing: border-box;
+  border-bottom: solid 1px var(--table-border);
+}
+table:has(thead) thead th:first-child,
+table:not(:has(thead)) tbody tr:first-child td:first-child {
+  border-top-left-radius: calc(var(--border-radius) - 1px);
+}
+table:has(thead) thead th:last-child,
+table:not(:has(thead)) tbody tr:first-child td:last-child {
+  border-top-right-radius: calc(var(--border-radius) - 1px);
+}
+
+table:has(tfoot) tfoot th:first-child,
+table:not(:has(tfoot)) tbody tr:last-child td:first-child {
+  border-bottom-left-radius: calc(var(--border-radius) - 1px);
+}
+table:has(tfoot) tfoot th:last-child,
+table:not(:has(tfoot)) tbody tr:last-child td:last-child {
+  border-bottom-right-radius: calc(var(--border-radius) - 1px);
+}
+table tbody tr td,
+table tfoot tr th {
+  padding: calc(var(--padding-vertical) / 2) var(--padding-horizontal);
+  box-sizing: border-box;
+}
+table tfoot tr th {
+  border-top: solid 1px var(--table-border);
+}
+table th:not(:last-child),
+table td:not(:last-child) {
+  border-right: solid 1px var(--table-border);
+}
+table tr:not(:last-child) td {
+  border-bottom: solid 1px var(--table-border);
+}
+table td {
+  color: var(--table-td-text) !important;
+}
