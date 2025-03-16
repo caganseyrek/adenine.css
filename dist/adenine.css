@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /*! adenine.css | MIT License | https://github.com/caganseyrek/adenine.css */
-body.dark {
+:root body.dark {
   --color-gray-1: #e3e3e3;
   --color-gray-2: #cfcfcf;
   --color-gray-3: #bdbdbd;
@@ -101,7 +101,7 @@ body.dark {
   --color-blue-8: #102f66;
   --color-blue-9: #0a1e45;
 }
-body.light {
+:root body.light {
   --color-gray-1: #f6f6f6;
   --color-gray-2: #ececec;
   --color-gray-3: #e0e0e0;
