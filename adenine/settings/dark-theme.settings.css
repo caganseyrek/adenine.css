@@ -1,4 +1,4 @@
-:root body.dark {
+body.dark {
   color-scheme: dark;
 
   --color-text: #f8f8f8;
@@ -35,7 +35,7 @@
   --color-button-primary-faded-text: var(--color-primary-2);
   --color-button-primary-faded-border: var(--color-primary-7);
 
-  /* Button and Container */
+  /* Container */
   --color-container-base-background: var(--color-gray-9);
   --color-container-base-text: var(--color-gray-1);
   --color-container-base-border: var(--color-gray-8);

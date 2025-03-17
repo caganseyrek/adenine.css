@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Minimal CSS toolkit for designing clean UIs",
   "scripts": {
-    "build": "postcss src/main.css -o dist/adenine.min.css"
+    "build": "postcss adenine/main.css -o dist/adenine.min.css"
   },
   "keywords": [
     "css",
-    "toolkit",
+    "ui-design",
+    "css-toolkit",
+    "styles",
+    "stylesheets",
     "minimal"
   ],
   "author": {

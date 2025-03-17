@@ -6,53 +6,27 @@
   border-radius: var(--border-radius);
 }
 
-body:not(.dark) .container {
+.container {
   border: solid 1px var(--color-container-base-border);
   background-color: var(--color-container-base-background);
   color: var(--color-container-base-text);
 }
-body:not(.dark) .container.success {
+.container.success {
   border: solid 1px var(--color-container-success-border);
   background-color: var(--color-container-success-background);
   color: var(--color-container-success-text);
 }
-body:not(.dark) .container.danger {
+.container.danger {
   border: solid 1px var(--color-container-danger-border);
   background-color: var(--color-container-danger-background);
   color: var(--color-container-danger-text);
 }
-body:not(.dark) .container.warning {
+.container.warning {
   border: solid 1px var(--color-container-warning-border);
   background-color: var(--color-container-warning-background);
   color: var(--color-container-warning-text);
 }
-body:not(.dark) .container.info {
-  border: solid 1px var(--color-container-info-border);
-  background-color: var(--color-container-info-background);
-  color: var(--color-container-info-text);
-}
-
-body.dark .container {
-  border: solid 1px var(--color-container-base-border);
-  background-color: var(--color-container-base-background);
-  color: var(--color-container-base-text);
-}
-body.dark .container.success {
-  border: solid 1px var(--color-container-success-border);
-  background-color: var(--color-container-success-background);
-  color: var(--color-container-success-text);
-}
-body.dark .container.danger {
-  border: solid 1px var(--color-container-danger-border);
-  background-color: var(--color-container-danger-background);
-  color: var(--color-container-danger-text);
-}
-body.dark .container.warning {
-  border: solid 1px var(--color-container-warning-border);
-  background-color: var(--color-container-warning-background);
-  color: var(--color-container-warning-text);
-}
-body.dark .container.info {
+.container.info {
   border: solid 1px var(--color-container-info-border);
   background-color: var(--color-container-info-background);
   color: var(--color-container-info-text);

@@ -1,4 +1,4 @@
-:root body.light {
+body.light {
   color-scheme: light;
 
   --color-text: #1c1c1c;
@@ -14,44 +14,51 @@
   --color-primary-8: var(--color-indigo-8);
   --color-primary-9: var(--color-indigo-9);
 
-  /* Button and Container */
-  --color-base-background: var(--color-gray-4);
-  --color-base-text: var(--static-color-black);
-  --color-base-border: var(--color-gray-4);
-  --color-base-outline: var(--color-gray-3);
+  /* Button */
+  --color-button-base-background: var(--color-gray-4);
+  --color-button-base-text: var(--static-color-black);
+  --color-button-base-border: var(--color-gray-4);
+  --color-button-base-outline: var(--color-gray-2);
+  --color-button-base-outline-inner-border: var(--color-gray-4);
 
-  --color-primary-background: var(--color-primary-7);
-  --color-primary-text: var(--static-color-white);
-  --color-primary-border: var(--color-primary-7);
-  --color-primary-outline: var(--color-primary-2);
+  --color-button-base-faded-background: var(--color-gray-3);
+  --color-button-base-faded-text: var(--color-gray-8);
+  --color-button-base-faded-border: var(--color-gray-3);
 
-  --color-base-faded-background: var(--color-gray-3);
-  --color-base-faded-text: var(--color-gray-8);
-  --color-base-faded-border: var(--color-gray-3);
+  --color-button-primary-background: var(--color-primary-7);
+  --color-button-primary-text: var(--static-color-white);
+  --color-button-primary-border: var(--color-primary-7);
+  --color-button-primary-outline: var(--color-primary-2);
+  --color-button-primary-outline-inner-border: var(--color-primary-5);
 
-  --color-primary-faded-background: var(--color-primary-5);
-  --color-primary-faded-text: var(--color-primary-1);
-  --color-primary-faded-border: var(--color-primary-5);
+  --color-button-primary-faded-background: var(--color-primary-5);
+  --color-button-primary-faded-text: var(--color-primary-1);
+  --color-button-primary-faded-border: var(--color-primary-5);
 
-  --color-success-background: var(--color-green-4);
-  --color-success-text: var(--color-green-9);
-  --color-success-border: var(--color-green-7);
-  --color-success-outline: var(--color-green-2);
+  /* Container */
+  --color-container-base-background: var(--color-gray-4);
+  --color-container-base-text: var(--static-color-black);
+  --color-container-base-border: var(--color-gray-4);
 
-  --color-danger-background: var(--color-red-3);
-  --color-danger-text: var(--color-red-9);
-  --color-danger-border: var(--color-red-7);
-  --color-danger-outline: var(--color-red-2);
+  --color-container-primary-background: var(--color-primary-7);
+  --color-container-primary-text: var(--static-color-white);
+  --color-container-primary-border: var(--color-primary-7);
 
-  --color-warning-background: var(--color-yellow-3);
-  --color-warning-text: var(--color-yellow-9);
-  --color-warning-border: var(--color-yellow-7);
-  --color-warning-outline: var(--color-yellow-2);
+  --color-container-success-background: var(--color-green-4);
+  --color-container-success-text: var(--color-green-9);
+  --color-container-success-border: var(--color-green-7);
 
-  --color-info-background: var(--color-blue-4);
-  --color-info-text: var(--color-blue-9);
-  --color-info-border: var(--color-blue-7);
-  --color-info-outline: var(--color-blue-2);
+  --color-container-danger-background: var(--color-red-3);
+  --color-container-danger-text: var(--color-red-9);
+  --color-container-danger-border: var(--color-red-7);
+
+  --color-container-warning-background: var(--color-yellow-3);
+  --color-container-warning-text: var(--color-yellow-9);
+  --color-container-warning-border: var(--color-yellow-7);
+
+  --color-container-info-background: var(--color-blue-4);
+  --color-container-info-text: var(--color-blue-9);
+  --color-container-info-border: var(--color-blue-7);
 
   /* Form */
   --color-input-group-label-background: var(--color-gray-2);
