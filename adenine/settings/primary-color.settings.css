@@ -1,0 +1,33 @@
+:root body.light {
+  color-scheme: light;
+
+  --color-text: #1c1c1c;
+  --color-background: #f8f8f8;
+
+  --color-primary-1: var(--color-indigo-1);
+  --color-primary-2: var(--color-indigo-2);
+  --color-primary-3: var(--color-indigo-3);
+  --color-primary-4: var(--color-indigo-4);
+  --color-primary-5: var(--color-indigo-5);
+  --color-primary-6: var(--color-indigo-6);
+  --color-primary-7: var(--color-indigo-7);
+  --color-primary-8: var(--color-indigo-8);
+  --color-primary-9: var(--color-indigo-9);
+}
+
+:root body.dark {
+  color-scheme: dark;
+
+  --color-text: #f8f8f8;
+  --color-background: #1c1c1c;
+
+  --color-primary-1: var(--color-indigo-1);
+  --color-primary-2: var(--color-indigo-2);
+  --color-primary-3: var(--color-indigo-3);
+  --color-primary-4: var(--color-indigo-4);
+  --color-primary-5: var(--color-indigo-5);
+  --color-primary-6: var(--color-indigo-6);
+  --color-primary-7: var(--color-indigo-7);
+  --color-primary-8: var(--color-indigo-8);
+  --color-primary-9: var(--color-indigo-9);
+}

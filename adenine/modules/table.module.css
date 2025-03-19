@@ -1,7 +1,44 @@
+:root {
+  --table-header-padding-top: var(--padding-md);
+  --table-header-padding-right: var(--padding-md);
+  --table-header-padding-bottom: var(--padding-md);
+  --table-header-padding-left: var(--padding-md);
+
+  --table-footer-padding-top: var(--padding-md);
+  --table-footer-padding-right: var(--padding-md);
+  --table-footer-padding-bottom: var(--padding-md);
+  --table-footer-padding-left: var(--padding-md);
+
+  --table-cell-padding-top: var(--padding-md);
+  --table-cell-padding-right: var(--padding-md);
+  --table-cell-padding-bottom: var(--padding-md);
+  --table-cell-padding-left: var(--padding-md);
+
+  --table-top-left-radius: var(--border-radius-md);
+  --table-top-right-radius: var(--border-radius-md);
+  --table-bottom-left-radius: var(--border-radius-md);
+  --table-bottom-right-radius: var(--border-radius-md);
+}
+
+:root body.light {
+  --table-border: var(--color-gray-4);
+  --table-striped-background: var(--color-gray-2);
+  --table-th-background: var(--color-gray-2);
+  --table-td-text: var(--color-gray-9);
+}
+
+:root body.dark {
+  --table-border: var(--color-gray-8);
+  --table-striped-background: var(--color-gray-9);
+  --table-th-background: var(--color-gray-9);
+  --table-td-text: var(--color-gray-2);
+}
+
 table {
   width: 100%;
   border: solid 1px var(--table-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--table-top-left-radius) var(--table-top-right-radius)
+    var(--table-bottom-left-radius) var(--table-bottom-right-radius);
   border-collapse: separate;
   border-spacing: 0;
 }
@@ -14,30 +51,36 @@ table tfoot tr th {
   background-color: var(--table-th-background);
 }
 table thead tr th {
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  padding: var(--table-header-padding-top) var(--table-header-padding-right)
+    var(--table-header-padding-bottom) var(--table-header-padding-left);
   box-sizing: border-box;
   border-bottom: solid 1px var(--table-border);
 }
 table:has(thead) thead th:first-child,
 table:not(:has(thead)) tbody tr:first-child td:first-child {
-  border-top-left-radius: calc(var(--border-radius) - 1px);
+  border-top-left-radius: calc(var(--table-top-left-radius) - 1px);
 }
 table:has(thead) thead th:last-child,
 table:not(:has(thead)) tbody tr:first-child td:last-child {
-  border-top-right-radius: calc(var(--border-radius) - 1px);
+  border-top-right-radius: calc(var(--table-top-right-radius) - 1px);
 }
 
 table:has(tfoot) tfoot th:first-child,
 table:not(:has(tfoot)) tbody tr:last-child td:first-child {
-  border-bottom-left-radius: calc(var(--border-radius) - 1px);
+  border-bottom-left-radius: calc(var(--table-bottom-left-radius) - 1px);
 }
 table:has(tfoot) tfoot th:last-child,
 table:not(:has(tfoot)) tbody tr:last-child td:last-child {
-  border-bottom-right-radius: calc(var(--border-radius) - 1px);
+  border-bottom-right-radius: calc(var(--table-bottom-right-radius) - 1px);
 }
-table tbody tr td,
+table tbody tr td {
+  padding: var(--table-cell-padding-top) var(--table-cell-padding-right)
+    var(--table-cell-padding-bottom) var(--table-cell-padding-left);
+  box-sizing: border-box;
+}
 table tfoot tr th {
-  padding: calc(var(--padding-vertical) / 2) var(--padding-horizontal);
+  padding: var(--table-footer-padding-top) var(--table-footer-padding-right)
+    var(--table-footer-padding-bottom) var(--table-footer-padding-left);
   box-sizing: border-box;
 }
 table tfoot tr th {

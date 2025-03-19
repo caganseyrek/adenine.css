@@ -1,10 +1,124 @@
+:root {
+  --form-inner-spacing-vertical: var(--spacing-md);
+  --form-inner-spacing-horizontal: var(--spacing-md);
+
+  --form-row-inner-spacing-vertical: var(--spacing-md);
+  --form-row-inner-spacing-horizontal: var(--spacing-md);
+
+  --form-input-group-inner-spacing-vertical: var(--spacing-md);
+  --form-input-group-inner-spacing-horizontal: var(--spacing-md);
+
+  --form-input-group-label-padding-top: var(--padding-md);
+  --form-input-group-label-padding-right: var(--padding-md);
+  --form-input-group-label-padding-bottom: var(--padding-md);
+  --form-input-group-label-padding-left: var(--padding-md);
+
+  --form-input-inner-spacing-vertical: var(--spacing-md);
+  --form-input-inner-spacing-horizontal: var(--spacing-md);
+
+  --form-input-padding-top: var(--padding-md);
+  --form-input-padding-right: var(--padding-md);
+  --form-input-padding-bottom: var(--padding-md);
+  --form-input-padding-left: var(--padding-md);
+
+  --form-input-top-left-radius: var(--border-radius-md);
+  --form-input-top-right-radius: var(--border-radius-md);
+  --form-input-bottom-left-radius: var(--border-radius-md);
+  --form-input-bottom-right-radius: var(--border-radius-md);
+}
+
+:root body.light {
+  --color-input-group-label-background: var(--color-gray-2);
+  --color-input-group-label-border: var(--color-gray-4);
+  --color-input-group-label-text: var(--color-gray-9);
+
+  --color-input-background: var(--color-gray-2);
+  --color-input-border: var(--color-gray-4);
+  --color-input-text: var(--color-gray-9);
+  --color-input-outline: var(--color-gray-2);
+  --color-input-outline-inner-border: var(--color-gray-6);
+  --color-input-placeholder-text: var(--color-gray-9);
+
+  --color-input-success-background: var(--color-green-1);
+  --color-input-success-border: var(--color-green-7);
+  --color-input-success-text: var(--color-green-9);
+  --color-input-success-outline: var(--color-green-2);
+  --color-input-success-outline-inner-border: var(--color-green-7);
+  --color-input-success-placeholder-text: var(--color-green-9);
+
+  --color-input-danger-background: var(--color-red-1);
+  --color-input-danger-border: var(--color-red-7);
+  --color-input-danger-text: var(--color-red-9);
+  --color-input-danger-outline: var(--color-red-2);
+  --color-input-danger-outline-inner-border: var(--color-red-7);
+  --color-input-danger-placeholder-text: var(--color-red-9);
+
+  --color-form-success-message-text: var(--color-green-8);
+  --color-form-danger-message-text: var(--color-red-8);
+
+  --color-checkbox-unchecked-border: var(--color-gray-4);
+  --color-checkbox-unchecked-background: var(--color-gray-2);
+
+  --color-checkbox-checked-border: var(--color-primary-4);
+  --color-checkbox-checked-background: var(--color-primary-4);
+
+  --color-checkbox-outline: var(--color-primary-2);
+  --color-checkbox-outline-inner-border: var(--color-primary-4);
+  --color-checkbox-checkmark-background: var(--color-primary-4);
+
+  --color-fieldset-border: var(--table-border);
+}
+
+:root body.dark {
+  --color-input-group-label-background: var(--color-gray-8);
+  --color-input-group-label-text: var(--color-gray-1);
+  --color-input-group-label-border: var(--color-gray-7);
+
+  --color-input-background: var(--color-gray-9);
+  --color-input-border: var(--color-gray-8);
+  --color-input-text: var(--color-gray-1);
+  --color-input-outline: var(--color-gray-8);
+  --color-input-outline-inner-border: var(--color-gray-6);
+  --color-input-placeholder-text: var(--color-gray-5);
+
+  --color-input-success-background: var(--color-gray-9);
+  --color-input-success-border: var(--color-green-7);
+  --color-input-success-text: var(--color-green-1);
+  --color-input-success-outline: var(--color-green-9);
+  --color-input-success-outline-inner-border: var(--color-green-7);
+  --color-input-success-placeholder-text: var(--color-green-1);
+
+  --color-input-danger-background: var(--color-gray-9);
+  --color-input-danger-border: var(--color-red-6);
+  --color-input-danger-text: var(--color-red-1);
+  --color-input-danger-outline: var(--color-red-9);
+  --color-input-danger-outline-inner-border: var(--color-red-6);
+  --color-input-danger-placeholder-text: var(--color-red-1);
+
+  --color-form-success-message-text: var(--color-green-4);
+  --color-form-danger-message-text: var(--color-red-4);
+
+  --color-checkbox-unchecked-border: var(--color-gray-8);
+  --color-checkbox-unchecked-background: var(--color-gray-9);
+
+  --color-checkbox-checked-border: var(--color-primary-4);
+  --color-checkbox-checked-background: var(--color-primary-4);
+
+  --color-checkbox-outline: var(--color-primary-7);
+  --color-checkbox-outline-inner-border: var(--color-primary-4);
+  --color-checkbox-checkmark-background: var(--color-primary-4);
+
+  --color-fieldset-border: var(--table-border);
+}
+
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  row-gap: var(--spacing-horizontal);
+  gap: calc(var(--form-inner-spacing-vertical) / 2)
+    calc(var(--form-inner-spacing-horizontal) / 2);
 }
 form div.form-row {
   width: 100%;
@@ -12,7 +126,8 @@ form div.form-row {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  gap: calc(var(--spacing-vertical) / 3) calc(var(--spacing-horizontal) / 3);
+  gap: calc(var(--form-row-inner-spacing-vertical) / 3)
+    calc(var(--form-row-inner-spacing-horizontal) / 3);
 }
 form div.input-group {
   width: 100%;
@@ -20,16 +135,22 @@ form div.input-group {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  column-gap: calc(var(--spacing-horizontal) / 2);
+  gap: calc(var(--form-input-group-inner-spacing-vertical) / 2)
+    calc(var(--form-input-group-inner-spacing-horizontal) / 2);
 }
 form div.input-group-label {
   height: 2.5rem;
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  padding: var(--form-input-group-label-padding-top)
+    var(--form-input-group-label-padding-right)
+    var(--form-input-group-label-padding-bottom)
+    var(--form-input-group-label-padding-left);
   box-sizing: border-box;
   background-color: var(--color-input-group-label-background);
   border: solid 1px var(--color-input-group-label-border);
   color: var(--color-input-group-label-text);
-  border-radius: var(--border-radius);
+  border-radius: var(--form-input-top-left-radius)
+    var(--form-input-top-right-radius) var(--form-input-bottom-left-radius)
+    var(--form-input-bottom-right-radius);
   font-size: 1rem;
 }
 input,
@@ -37,12 +158,15 @@ select,
 textarea {
   width: 100%;
   height: 2.5rem;
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  padding: var(--form-input-padding-top) var(--form-input-padding-right)
+    var(--form-input-padding-bottom) var(--form-input-padding-left);
   box-sizing: border-box;
   color: var(--color-input-text);
   border: solid 1px var(--color-input-border);
   background-color: var(--color-input-background);
-  border-radius: var(--border-radius);
+  border-radius: var(--form-input-top-left-radius)
+    var(--form-input-top-right-radius) var(--form-input-bottom-left-radius)
+    var(--form-input-bottom-right-radius);
   font-size: 1rem;
 }
 input:not([type="radio"], [type="checkbox"]):focus,
@@ -51,7 +175,9 @@ textarea:focus {
   outline-offset: 0;
   outline: solid 3.5px var(--color-input-outline);
   border: solid 1px var(--color-input-outline-inner-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--form-input-top-left-radius)
+    var(--form-input-top-right-radius) var(--form-input-bottom-left-radius)
+    var(--form-input-bottom-right-radius);
 }
 input.is-success {
   border: solid 1px var(--color-input-success-border);
@@ -65,7 +191,9 @@ input.is-success:focus {
   outline-offset: 0;
   outline: solid 3.5px var(--color-input-success-outline);
   border: solid 1px var(--color-input-success-outline-inner-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--form-input-top-left-radius)
+    var(--form-input-top-right-radius) var(--form-input-bottom-left-radius)
+    var(--form-input-bottom-right-radius);
 }
 span.form-success-msg {
   color: var(--color-form-success-message-text);
@@ -82,7 +210,9 @@ input.has-error:focus {
   outline-offset: 0;
   outline: solid 3.5px var(--color-input-danger-outline);
   border: solid 1px var(--color-input-danger-outline-inner-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--form-input-top-left-radius)
+    var(--form-input-top-right-radius) var(--form-input-bottom-left-radius)
+    var(--form-input-bottom-right-radius);
 }
 span.form-error-msg {
   color: var(--color-form-danger-message-text);
@@ -96,7 +226,9 @@ input[type="radio"] {
   font: inherit;
   width: 1.15em;
   height: 1.15em;
-  border-radius: var(--border-radius);
+  border-radius: var(--form-input-top-left-radius)
+    var(--form-input-top-right-radius) var(--form-input-bottom-left-radius)
+    var(--form-input-bottom-right-radius);
   display: grid;
   place-content: center;
 }
@@ -118,7 +250,9 @@ input[type="radio"]:focus {
   outline-offset: 0;
   outline: solid 3.5px var(--color-checkbox-outline);
   border: solid 1px var(--color-checkbox-outline-inner-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--form-input-top-left-radius)
+    var(--form-input-top-right-radius) var(--form-input-bottom-left-radius)
+    var(--form-input-bottom-right-radius);
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
@@ -148,19 +282,24 @@ label {
   display: inline-flex;
   align-items: center;
   justify-items: start;
-  gap: calc(var(--spacing-horizontal) / 2) calc(var(--spacing-vertical) / 2);
+  gap: calc(var(--form-inner-spacing-vertical) / 2)
+    calc(var(--form-inner-spacing-horizontal) / 2);
 }
 fieldset {
   width: 100%;
   margin: 0;
-  padding: var(--padding-vertical) var(--padding-horizontal) !important;
+  padding: var(--form-input-padding-top) var(--form-input-padding-right)
+    var(--form-input-padding-bottom) var(--form-input-padding-left);
   box-sizing: border-box;
   border: solid 1px var(--color-fieldset-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--form-input-top-left-radius)
+    var(--form-input-top-right-radius) var(--form-input-bottom-left-radius)
+    var(--form-input-bottom-right-radius);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: calc(var(--spacing-horizontal) / 2) calc(var(--spacing-vertical) / 2);
+  gap: calc(var(--form-inner-spacing-vertical) / 2)
+    calc(var(--form-inner-spacing-horizontal) / 2);
 }
 fieldset legend {
   padding-left: 10px;

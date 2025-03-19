@@ -1,17 +1,87 @@
+:root {
+  --button-inner-spacing-vertical: var(--spacing-md);
+  --button-inner-spacing-horizontal: var(--spacing-md);
+
+  --button-padding-top: var(--padding-md);
+  --button-padding-right: var(--padding-md);
+  --button-padding-bottom: var(--padding-md);
+  --button-padding-left: var(--padding-md);
+
+  --button-margin-top: var(--margin-md);
+  --button-margin-right: var(--margin-md);
+  --button-margin-bottom: var(--margin-md);
+  --button-margin-left: var(--margin-md);
+
+  --button-top-left-radius: var(--border-radius-md);
+  --button-top-right-radius: var(--border-radius-md);
+  --button-bottom-left-radius: var(--border-radius-md);
+  --button-bottom-right-radius: var(--border-radius-md);
+}
+
+:root body.light {
+  --color-button-base-background: var(--color-gray-4);
+  --color-button-base-text: var(--static-color-black);
+  --color-button-base-border: var(--color-gray-4);
+  --color-button-base-outline: var(--color-gray-2);
+  --color-button-base-outline-inner-border: var(--color-gray-4);
+
+  --color-button-base-faded-background: var(--color-gray-3);
+  --color-button-base-faded-text: var(--color-gray-8);
+  --color-button-base-faded-border: var(--color-gray-3);
+
+  --color-button-primary-background: var(--color-primary-7);
+  --color-button-primary-text: var(--static-color-white);
+  --color-button-primary-border: var(--color-primary-7);
+  --color-button-primary-outline: var(--color-primary-2);
+  --color-button-primary-outline-inner-border: var(--color-primary-5);
+
+  --color-button-primary-faded-background: var(--color-primary-5);
+  --color-button-primary-faded-text: var(--color-primary-1);
+  --color-button-primary-faded-border: var(--color-primary-5);
+}
+
+:root body.dark {
+  --color-button-base-background: var(--color-gray-8);
+  --color-button-base-text: var(--color-gray-1);
+  --color-button-base-border: var(--color-gray-7);
+  --color-button-base-outline: var(--color-gray-8);
+  --color-button-base-outline-inner-border: var(--color-gray-6);
+
+  --color-button-base-faded-background: var(--color-gray-9);
+  --color-button-base-faded-text: var(--color-gray-4);
+  --color-button-base-faded-border: var(--color-gray-8);
+
+  --color-button-primary-background: var(--color-primary-7);
+  --color-button-primary-text: var(--color-primary-1);
+  --color-button-primary-border: var(--color-primary-6);
+  --color-button-primary-outline: var(--color-primary-7);
+  --color-button-primary-outline-inner-border: var(--color-primary-5);
+
+  --color-button-primary-faded-background: var(--color-primary-8);
+  --color-button-primary-faded-text: var(--color-primary-2);
+  --color-button-primary-faded-border: var(--color-primary-7);
+}
+
 button,
 input[type="button"],
 input[type="submit"],
-input[type="reset"] {
+input[type="reset"],
+a.as-button {
   height: 2.5rem;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  column-gap: calc(var(--padding-vertical) / 2);
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  gap: calc(var(--button-inner-spacing-vertical) / 2)
+    calc(var(--button-inner-spacing-horizontal) / 2);
+  padding: var(--button-padding-top) var(--button-padding-right)
+    var(--button-padding-bottom) var(--button-padding-left);
   box-sizing: border-box;
+  margin: var(--button-margin-top) var(--button-margin-right)
+    var(--button-margin-bottom) var(--button-margin-left);
   font-size: 1rem;
-  border-radius: var(--border-radius);
+  border-radius: var(--button-top-left-radius) var(--button-top-right-radius)
+    var(--button-bottom-left-radius) var(--button-bottom-right-radius);
   border: solid 1px var(--color-button-base-border);
   background-color: var(--color-button-base-background);
   color: var(--color-button-base-text);
@@ -19,11 +89,13 @@ input[type="reset"] {
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
-input[type="submit"]:focus {
+input[type="submit"]:focus,
+a.as-button:focus {
   outline-offset: 0;
   outline: solid 3.5px var(--color-button-base-outline) !important;
   border: solid 1px var(--color-button-base-outline-inner-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--button-top-left-radius) var(--button-top-right-radius)
+    var(--button-bottom-left-radius) var(--button-bottom-right-radius);
 }
 button:disabled,
 input[type="button"]:disabled,
@@ -50,7 +122,8 @@ input[type="submit"].primary:focus {
   outline-offset: 0;
   outline: solid 3.5px var(--color-button-primary-outline) !important;
   border: solid 1px var(--color-button-primary-outline-inner-border) !important;
-  border-radius: var(--border-radius);
+  border-radius: var(--button-top-left-radius) var(--button-top-right-radius)
+    var(--button-bottom-left-radius) var(--button-bottom-right-radius);
 }
 button.primary:disabled,
 input[type="button"].primary:disabled,

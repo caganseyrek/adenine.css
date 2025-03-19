@@ -1,14 +1,25 @@
 :root {
-  --border-radius-sm: 2px;
-  --border-radius: 5px;
-  --border-radius-lg: 8px;
+  --border-radius-xs: 1px;
+  --border-radius-sm: 2.5px;
+  --border-radius-md: 5px;
+  --border-radius-lg: 7.5px;
+  --border-radius-xl: 9px;
 
-  --spacing-vertical: 8px;
-  --spacing-horizontal: 12px;
+  --spacing-xs: 2px;
+  --spacing-sm: 4px;
+  --spacing-md: 8px;
+  --spacing-lg: 10px;
+  --spacing-xl: 15px;
 
-  --padding-vertical: 8px;
-  --padding-horizontal: 12px;
+  --padding-xs: 2px;
+  --padding-sm: 4px;
+  --padding-md: 8px;
+  --padding-lg: 10px;
+  --padding-xl: 15px;
 
-  --margin-vertical: 8px;
-  --margin-horizontal: 0;
+  --margin-xs: 2px;
+  --margin-sm: 4px;
+  --margin-md: 8px;
+  --margin-lg: 10px;
+  --margin-xl: 15px;
 }

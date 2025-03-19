@@ -1,3 +1,65 @@
+:root {
+  --typography-container-inner-spacing-vertical: var(--spacing-md);
+  --typography-container-inner-spacing-horizontal: var(--spacing-md);
+
+  --typography-container-padding-top: var(--padding-md);
+  --typography-container-padding-right: var(--padding-md);
+  --typography-container-padding-bottom: var(--padding-md);
+  --typography-container-padding-left: var(--padding-md);
+
+  --typography-container-margin-top: var(--margin-md);
+  --typography-container-margin-right: var(--margin-md);
+  --typography-container-margin-bottom: var(--margin-md);
+  --typography-container-margin-left: var(--margin-md);
+
+  --typography-container-top-left-radius: var(--border-radius-md);
+  --typography-container-top-right-radius: var(--border-radius-md);
+  --typography-container-bottom-left-radius: var(--border-radius-md);
+  --typography-container-bottom-right-radius: var(--border-radius-md);
+}
+
+:root body.light {
+  --color-link-text: var(--color-primary-7);
+  --color-link-outline: var(--color-primary-2);
+
+  --color-higlight-background: var(--color-primary-2);
+  --color-higlight-text: var(--color-text);
+
+  --color-blockquote-border: var(--color-gray-4);
+  --color-blockquote-background: var(--color-gray-2);
+  --color-blockquote-text: var(--color-gray-9);
+  --color-blockquote-citation: var(--color-gray-7);
+
+  --color-inline-code-background: var(--color-gray-3);
+
+  --color-codeblock-border: var(--color-gray-4);
+  --color-codeblock-background: var(--color-gray-2);
+  --color-codeblock-text: var(--color-gray-9);
+}
+
+:root body.dark {
+  --color-paragraph-text: var(--color-gray-2);
+  --color-list-marker: var(--color-gray-2);
+
+  --color-link-text: var(--color-primary-3);
+  --color-link-outline: var(--color-primary-3);
+
+  --color-higlight-text: var(--color-primary-1);
+  --color-higlight-background: var(--color-primary-6);
+
+  --color-blockquote-border: var(--color-gray-8);
+  --color-blockquote-background: var(--color-gray-9);
+  --color-blockquote-text: var(--color-gray-2);
+  --color-blockquote-citation: var(--color-gray-4);
+
+  --color-inline-code-text: var(--color-gray-2);
+  --color-inline-code-background: var(--color-gray-8);
+
+  --color-codeblock-border: var(--color-gray-8);
+  --color-codeblock-background: var(--color-gray-9);
+  --color-codeblock-text: var(--color-gray-2);
+}
+
 h1 {
   font-size: var(--h1-size);
   line-height: var(--h1-height);
@@ -52,13 +114,18 @@ a:focus {
   border-radius: var(--border-radius-sm) !important;
 }
 blockquote {
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  margin: var(--container-margin-top) var(--container-margin-right)
+    var(--container-margin-bottom) var(--container-margin-left);
+  padding: var(--container-padding-top) var(--container-padding-right)
+    var(--container-padding-bottom) var(--container-padding-left);
   box-sizing: border-box;
   border: solid 1px var(--color-blockquote-border);
   border-left-width: 7px;
   background-color: var(--color-blockquote-background);
   color: var(--color-blockquote-text);
-  border-radius: var(--border-radius);
+  border-radius: var(--container-top-left-radius)
+    var(--container-top-right-radius) var(--container-bottom-left-radius)
+    var(--container-bottom-right-radius);
 }
 blockquote cite {
   display: block;
@@ -78,12 +145,17 @@ samp {
   font-size: 0.95rem !important;
 }
 pre {
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  margin: var(--container-margin-top) var(--container-margin-right)
+    var(--container-margin-bottom) var(--container-margin-left);
+  padding: var(--container-padding-top) var(--container-padding-right)
+    var(--container-padding-bottom) var(--container-padding-left);
   box-sizing: border-box;
   border: solid 1px var(--color-codeblock-border);
   background-color: var(--color-codeblock-background);
   color: var(--color-codeblock-text);
-  border-radius: var(--border-radius);
+  border-radius: var(--container-top-left-radius)
+    var(--container-top-right-radius) var(--container-bottom-left-radius)
+    var(--container-bottom-right-radius);
   letter-spacing: -0.05rem;
 }
 pre code {

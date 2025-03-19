@@ -5,8 +5,7 @@
 @import url("./colors/light-theme.colors.css");
 
 /* Main variables for customization */
-@import url("./settings/dark-theme.settings.css");
-@import url("./settings/light-theme.settings.css");
+@import url("./settings/primary-color.settings.css");
 @import url("./settings/spacing.settings.css");
 @import url("./settings/typography.settings.css");
 
@@ -24,3 +23,6 @@
 
 /* External libraries */
 @import url("./lib/normalize.css");
+
+/* Custom Components */
+@import url("../components/dropdown.component.css");
